@@ -15,9 +15,10 @@ body {
 
 header,
 footer {
+    display: flex;
     padding: 15px;
     background-color: #fff;
-
+    box-sizing: border-box;
 
 }
 
@@ -87,7 +88,7 @@ aside {
 
     background-color: #fff;
     overflow: scroll;
-    overflow: ;
+    
     padding: 20px;
     height: 400px;
 }
@@ -108,7 +109,7 @@ main {
     margin-right: auto;
 }
 
-.left {
+.left-header {
     padding: 0;
     margin: 0;
     display: flex;
@@ -117,7 +118,8 @@ main {
 
 }
 
-.right {
+.right-header {
+    display: flex;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     color: #fff;
@@ -135,4 +137,16 @@ main {
     
 
 
+}
+i {
+    margin-right: 15px;
+}
+.friends {
+    
+    margin-left: auto;
+}
+
+
+.form {
+    display: flex;
 }
