@@ -17,8 +17,10 @@
             <div class="chat">
                 <header class="left-header">
 
-                    <div class="common"><i class="fa fa-comments" aria-hidden="true"></i>Общий чат</div>
-                    <div class="inbox"><i class="fa fa-envelope" aria-hidden="true"></i>Входящие сообщения</div>
+                    <div class="common" onclick="window.location.assign('http://google.com')"><i class="fa fa-comments"
+                            aria-hidden="true"></i> Общий чат</div>
+                    <div class="inbox" onclick="window.location.assign('http://google.com')"><i class="fa fa-envelope"
+                            aria-hidden="true"></i>Входящие сообщения</div>
                     <div class="radio">999</div>
 
 
@@ -75,12 +77,14 @@
                             </select>
 
                         </div>
-                        <div>
-                            <input type="text">
+                        <div class="form-col">
+                            <form action="">
+                                <input type="text" size="100" name="nick">
+                            </form>
                         </div>
-                        
-                            <button>Отправить</button>
-                        
+                        <div>
+                            <a href="">Отправить</a>
+                        </div>
                     </div>
                 </footer>
             </div>
@@ -96,13 +100,19 @@
 
                 </aside>
                 <footer>
-                    <div>Статус</div>
-                    <select>
-                        <option>Online</option>
-                        <option>Ofline</option>
-                        <option>Слушаю музыку</option>
-                        <option>Занят</option>
-                    </select>
+                    <div class="status">
+                        <div>
+                            Статус
+                        </div>
+                        <div class="new-select-style">
+                            <select>
+                                <option>Online</option>
+                                <option>Ofline</option>
+                                <option>Слушаю музыку</option>
+                                <option>Занят</option>
+                            </select>
+                        </div>
+                    </div>
                 </footer>
             </div>
 
