@@ -21,7 +21,9 @@
                             aria-hidden="true"></i> Общий чат</div>
                     <div class="inbox" onclick="window.location.assign('http://google.com')"><i class="fa fa-envelope"
                             aria-hidden="true"></i>Входящие сообщения</div>
-                    <div class="radio">999</div>
+                    <div class="radio">
+                        999
+                    </div>
 
 
                 </header>
@@ -58,10 +60,11 @@
                     necessitatibus corrupti libero, ratione tenetur totam iste minima, animi eligendi. Iusto repellendus
                     quibusdam cupiditate provident quod animi, tempore error nam, esse doloremque sunt placeat enim quae
                     adipisci voluptates excepturi corrupti. Alias, blanditiis at inventore asperiores ab odio optio
-                    commodi hic. </section>
+                    commodi hic.
+                </section>
                 <footer>
                     <div class="form">
-                        <div class="form-col">
+                        <div class="new-select-style">
                             <select>
                                 <option>Общий</option>
                                 <option>Приват</option>
@@ -71,15 +74,15 @@
 
                         </div>
 
-                        <div class="form-col">
+                        <div class="new-select-style">
                             <select>
                                 <option>Черный</option>
                             </select>
 
                         </div>
                         <div class="form-col">
-                            <form action="">
-                                <input type="text" size="100" name="nick">
+                            <form>
+                                <input type="text" size="110" name="nick">
                             </form>
                         </div>
                         <div>
@@ -92,16 +95,32 @@
             <div class="chatsettings">
                 <header class="right-header">
                     <div>В чате:</div>
-                    <div class="friends"><i class="fas fa-user-friends" aria-hidden="true"></i></div>
+                    <div class="users"><i class="fas fa-user-friends" aria-hidden="true"></i></div>
 
                 </header>
-                <aside> <img src="./img/usual копия.jpg"> User_name <img src="./img/award_orange.jpg"> <img
+                <aside> 
+                    <div class="user-name">
+                        <img src="./img/usual копия.jpg">  User_name <img src="./img/award_orange.jpg"> <img
                         src="./img/user-slash_icon(awesome).jpg"> <img src="./img/minus-circle.jpg">
 
+                    </div>
+                        
+                    <div class="user-name">
+                        <img src="./img/personal-security.jpg" alt=""> User_name <img src="./img/award_violet.jpg" alt=""><img
+                        src="./img/user-slash_icon(awesome).jpg"> <img src="./img/Ellipse_red.jpg" alt="">
+                    </div>
+
                 </aside>
+                <div class="settings-chat">Настройки чата</div>
+                <div class="settings-bg">Фон чата</div>
+                <div class="black-list">Показать черный список
+                    <div>
+                        <input type="checkbox" class="checkbox">
+                    </div>
+                </div>
                 <footer>
                     <div class="status">
-                        <div>
+                        <div class="status-right">
                             Статус
                         </div>
                         <div class="new-select-style">

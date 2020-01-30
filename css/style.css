@@ -1,15 +1,16 @@
 html,
 body {
+    height: 100%;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f5f6;
 }
 
 .container {
-
     background-color: #ddd;
     margin: 15px;
     border-radius: 5px;
-    max-width: 1200px;
+    max-width: 100%;
     padding: 15px;
 }
 
@@ -86,14 +87,28 @@ footer {
     border-top-right-radius: 5px;
 }
 
+
 section,
 aside {
 
     background-color: #fff;
-    overflow: scroll;
+    overflow-y: scroll;
+    
 
     padding: 20px;
+    
+}
+
+section {
     height: 400px;
+}
+
+aside {
+    height: 300px;
+}
+.user-name {
+    margin-top: 10px;
+    margin-left: 0;
 }
 
 main {
@@ -124,6 +139,7 @@ main {
 .right-header {
     cursor: pointer;
     display: flex;
+    width: auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     color: #fff;
@@ -147,8 +163,7 @@ i {
     margin-right: 15px;
 }
 
-.friends {
-
+.users {
     margin-left: auto;
 }
 
@@ -158,9 +173,9 @@ i {
 }
 
 
-   
+
 a {
-    
+
     position: relative;
     display: block;
     text-decoration: none;
@@ -181,19 +196,82 @@ a {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#740448', endColorstr='#fc7232', GradientType=1);
     /* IE6-9 */
-    
+
 }
-.new-select-style select {
-    border-radius: 5px;
-    background: transparent;
-    height: 38px;
-    padding: 5px;
-    margin-left: 60px ;
-    border: 1px;
-    font-size: 16px;
-    line-height: 1;
+
+.settings-chat {
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
     width: auto;
+    /* border-top-left-radius: 5px; */
+    /* border-top-right-radius: 5px; */
+    color: #fff;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#01842d+0,40d04d+100,2989d8+100,ff9500+100 */
+    background: rgb(1, 132, 45);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(1, 132, 45, 1) 0%, rgba(64, 208, 77, 1) 100%, rgba(41, 137, 216, 1) 100%, rgba(255, 149, 0, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(1, 132, 45, 1) 0%, rgba(64, 208, 77, 1) 100%, rgba(41, 137, 216, 1) 100%, rgba(255, 149, 0, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(1, 132, 45, 1) 0%, rgba(64, 208, 77, 1) 100%, rgba(41, 137, 216, 1) 100%, rgba(255, 149, 0, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01842d', endColorstr='#ff9500', GradientType=1);
+    /* IE6-9 */
 }
+
+.settings-bg  {
+    padding: 8px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.black-list {
+    display: flex;
+margin: 0;
+padding: 5px;
+background-color: #fff;
+/* cursor: pointer; */
+}
+
+.checkbox {
+    vertical-align: top;
+    margin-top: -5px;
+   margin-left: 25px;
+
+}
+
+.new-select-style select {
+    display: block;
+    /* font-size: 16px; */
+    /* font-family: sans-serif; */
+    font-weight: 700;
+    color: #444;
+    /* line-height: 1.3; */
+    padding: .6em 1.4em .5em .8em;
+    /* width: 100%; */
+    /* max-width: 100%; */
+    height: 38px;
+    box-sizing: border-box;
+    margin-left: 15px;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+    border-radius: 5px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+input {
+    margin-left: 15px;
+    height: 32px;
+    border-radius: 5px;
+}
+
 
 a:hover {
     background-position: right center;
@@ -201,7 +279,11 @@ a:hover {
 
 .status {
     display: flex;
+    margin-top: -6px;
+}
+
+.status-right {
+    text-align: center;
     margin: auto;
-
-
+    margin-right: 30px;
 }
