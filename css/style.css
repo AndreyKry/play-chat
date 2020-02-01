@@ -106,9 +106,42 @@ section {
 aside {
     height: 300px;
 }
-.user-name {
-    margin-top: 10px;
+ul.hr {
+    margin: 0;
+    padding: 4px;
+}
+
+ul.hr li {
+    display: inline-block;
+    
+}
+.usual {
     margin-left: 0;
+    padding: 0;
+}
+
+.use {
+    margin-left: 10px;
+}
+
+.award {
+    margin-left: 10px;
+}
+
+.user-slash {
+    
+    margin-left: 0;
+}
+
+.circle {
+    float: right;
+    margin-right: -20px;
+}
+
+.user-name {
+    
+    margin-top: 10px;
+    
 }
 
 main {
@@ -243,14 +276,13 @@ background-color: #fff;
 
 .new-select-style select {
     display: block;
-    /* font-size: 16px; */
+    /* font-size: ; */
     /* font-family: sans-serif; */
     font-weight: 700;
     color: #444;
     /* line-height: 1.3; */
     padding: .6em 1.4em .5em .8em;
-    /* width: 100%; */
-    /* max-width: 100%; */
+    max-width: 100%;
     height: 38px;
     box-sizing: border-box;
     margin-left: 15px;
