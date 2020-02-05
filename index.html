@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/4465af46cc.js" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,12 @@
                     <div class="common" onclick="window.location.assign('http://google.com')"><i class="fa fa-comments"
                             aria-hidden="true"></i> Общий чат</div>
                     <div class="inbox" onclick="window.location.assign('http://google.com')"><i class="fa fa-envelope"
-                            aria-hidden="true"></i>Входящие сообщения</div>
+                            aria-hidden="true"></i>Входящие сообщения
+                        <div class="badge">
+                            12
+                        </div>
+
+                    </div>
                     <div class="radio">
                         999
                     </div>
@@ -80,9 +86,9 @@
                             </select>
 
                         </div>
-                        <div class="form-col">
+                        <div>
                             <form>
-                                <input type="text" size="110" name="nick">
+                                <input type="text" size="148" name="nick">
                             </form>
                         </div>
                         <div>
@@ -95,15 +101,16 @@
             <div class="chatsettings">
                 <header class="right-header">
                     <div>В чате:</div>
+                    <div class="counter">19</div>
                     <div class="users"><i class="fas fa-user-friends" aria-hidden="true"></i></div>
 
                 </header>
                 <aside>
                     <div class="user-name">
                         <ul class="hr">
-                            <li class="usual"><img src="./img/usual-copy.jpg"></li>
+                            <li class="usual"><img src="./icons/admin.svg"></li>
                             <li class="use">User_name</li>
-                            <li class="award"><img src="./img/award_orange.jpg"></li>
+                            <li class="award"><img src="./icons/award_violet.svg" alt=""></li>
                             <li class="user-slash"><img src="./img/user-slash_icon(awesome).jpg"></li>
                             <li class="circle"><img src="./img/minus-circle.jpg"></li>
 
@@ -112,9 +119,108 @@
 
                     <div class="user-name">
                         <ul class="hr">
+                            <li class="usual"><img src="./icons/usual.svg" alt=""></li>
+                            <li class="use">User_name</li>
+                            <li class="award"><img src="./icons/award_orange.svg" alt=""></li>
+                            <li class="user-slash"><img src="./img/user-slash_icon(awesome).jpg"></li>
+                            <li class="circle"><img src="./img/Ellipse_red.jpg" alt=""></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="user-name">
+                        <ul class="hr">
+                            <li class="usual"><img src="./icons/usual.svg" alt=""></li>
+                            <li class="use">User_name</li>
+                            <li class="award"><img src="./icons/award_blue.svg" alt=""></li>
+                            <li class="user-slash"><img src="./img/user-slash_icon(awesome).jpg"></li>
+                            <li class="circle"><img src="./img/Ellipse_green.jpg" alt=""></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="user-name">
+                        <ul class="hr">
+                            <li class="usual"><img src="./icons/usual.svg" alt=""></li>
+                            <li class="use">User_name</li>
+                            <li class="award"><img src="./icons/award_dark_blue.svg" alt=""></li>
+                            <li class="user-slash"><img src="./img/user-slash_icon(awesome).jpg"></li>
+                            <li class="circle"><img src="./img/Ellipse_green.jpg" alt=""></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="user-name">
+                        <ul class="hr">
                             <li class="usual"><img src="./img/personal-security.jpg" alt=""></li>
                             <li class="use">User_name</li>
-                            <li class="award"><img src="./img/award_violet.jpg" alt=""></li>
+                            <li class="award"><img src="./icons/winner.svg" alt=""></li>
+                            <li class="user-slash"><img src="./img/user-slash_icon(awesome).jpg"></li>
+                            <li class="circle"><img src="./img/headphones.jpg" alt=""></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="user-name">
+                        <ul class="hr">
+                            <li class="usual"><img src="./icons/usual.svg" alt=""></li>
+                            <li class="use">User_name</li>
+                            <li class="award"><img src="./icons/award_green.svg" alt=""></li>
+                            <li class="user-slash"><img src="./img/user-slash_icon(awesome).jpg"></li>
+                            <li class="circle"><img src="./img/Ellipse_red.jpg" alt=""></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="user-name">
+                        <ul class="hr">
+                            <li class="usual"><img src="./icons/usual.svg" alt=""></li>
+                            <li class="use">User_name</li>
+                            <li class="award"><img src="./icons/award_red.svg" alt=""></li>
+                            <li class="user-slash"><img src="./img/user-slash_icon(awesome).jpg"></li>
+                            <li class="circle"><img src="./img/Ellipse_red.jpg" alt=""></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="user-name">
+                        <ul class="hr">
+                            <li class="usual"><img src="./icons/usual.svg" alt=""></li>
+                            <li class="use">User_name</li>
+                            <li class="award"><img src="./icons/award_silver.svg" alt=""></li>
+                            <li class="user-slash"><img src="./img/user-slash_icon(awesome).jpg"></li>
+                            <li class="circle"><img src="./img/headphones.jpg" alt=""></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="user-name">
+                        <ul class="hr">
+                            <li class="usual"><img src="./icons/usual.svg" alt=""></li>
+                            <li class="use">User_name</li>
+                            <li class="award"><img src="./icons/award.svg" alt=""></li>
+                            <li class="user-slash"><img src="./img/user-slash_icon(awesome).jpg"></li>
+                            <li class="circle"><img src="./img/Ellipse_green.jpg" alt=""></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="user-name">
+                        <ul class="hr">
+                            <li class="usual"><img src="./icons/usual.svg" alt=""></li>
+                            <li class="use">User_name</li>
+                            <li class="award"><img src="./icons/vip.svg" alt=""></li>
+                            <li class="user-slash"><img src="./img/user-slash_icon(awesome).jpg"></li>
+                            <li class="circle"><img src="./img/minus-circle.jpg" alt=""></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="user-name">
+                        <ul class="hr">
+                            <li class="usual"><img src="./icons/usual.svg" alt=""></li>
+                            <li class="use">User_name</li>
+                            <li class="award"><img src="./icons/award_orange.svg" alt=""></li>
                             <li class="user-slash"><img src="./img/user-slash_icon(awesome).jpg"></li>
                             <li class="circle"><img src="./img/Ellipse_red.jpg" alt=""></li>
 
@@ -123,7 +229,43 @@
 
                 </aside>
                 <div class="settings-chat">Настройки чата</div>
-                <div class="settings-bg">Фон чата</div>
+                <div class="settings-bg">
+                    <div class="bg-show">Фон чата</div>
+                    <button id="bo"><img src="./img/graphicdesign_bg.jpg" alt=""></button>
+                    <div>
+                        <div id="enter">
+                            <table>
+                                <tr>
+                                    <td class="choose"><img src="./img/sunset_hd-HD.jpg" alt=""></td>
+                                    <td class="choose"><img src="./img/graphicdesign_bg.jpg" alt=""></td>
+                                    <td class="choose"><img src="./img/look.jpg" alt=""></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="choose"><img src="./img/sunset_hd-HD.jpg" alt=""></td>
+                                    <td class="choose"><img src="./img/Eco-Nature.jpg" alt=""></td>
+                                    <td class="choose"><img src="./img/sky.jpg" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td class="choose"><img src="./img/oAOP_3.jpg" alt=""></td>
+                                    <td class="choose"><img src="./img/wp3200849.jpg" alt=""></td>
+                                    <td class="choose"><img src="./img/sunset_hd-HD.jpg" alt=""></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                    <script>
+                        $("#enter").css("opacity", 0);
+                        $("#bo").click(function () {
+                            $("#enter").css("opacity", 1);
+                        })
+                        $("#bo").click(function () {
+                            $("#enter").toggle();
+                        })
+                    </script>
+                </div>
+
                 <div class="black-list">Показать черный список
                     <div>
                         <input type="checkbox" class="checkbox">
