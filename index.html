@@ -23,7 +23,10 @@
                     <div class="inbox" onclick="window.location.assign('http://google.com')"><i class="fa fa-envelope"
                             aria-hidden="true"></i>Входящие сообщения
                         <div class="badge">
-                            12
+                            <div class="number">
+                                124
+                            </div>
+
                         </div>
 
                     </div>
@@ -263,6 +266,12 @@
                         $("#bo").click(function () {
                             $("#enter").toggle();
                         })
+                        $(document).mouseup(function (e) {
+                            let container = $("#enter");
+                            if (container.has(e.target).length === 0) {
+                                container.hide();
+                            }
+                        });
                     </script>
                 </div>
 

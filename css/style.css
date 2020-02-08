@@ -1,6 +1,5 @@
 html,
 body {
-    
     height: 100%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -69,12 +68,21 @@ footer {
 }
 
 .badge {
+    /* padding: 2px; */
     margin-left: 30px;
-    height: 15px;
-    width: 20px;
+    width: 30px;
     background-color: #fff;
     color: #000;
     font-size: 14px;
+    position: relative;
+}
+.number {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 .radio {
@@ -101,7 +109,6 @@ footer {
 
 section,
 aside {
-
     background-color: #fff;
     overflow-y: scroll;
 
@@ -115,7 +122,7 @@ section {
 }
 
 aside {
-    width: 250px;
+    width: auto;
     height: 318px;
     padding: 0;
 
@@ -200,7 +207,7 @@ main {
 
 .right-header {
     cursor: pointer;
-    display: flex;
+   /* margin: 0; */
     width: auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -221,7 +228,7 @@ main {
 
 .counter {
     position: relative;
-    left: 110px;
+    left: 100px;
 }
 
 i {
@@ -290,8 +297,8 @@ table {
     height: auto;
     width: auto;
     position: absolute;
-    right: 5px;
-    bottom: 3px;
+    right: 3px;
+    bottom: 4px;
     padding: 0;
     background-color: rgb(255, 255, 255);
 }
