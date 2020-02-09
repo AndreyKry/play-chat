@@ -262,15 +262,18 @@
                         $("#enter").css("opacity", 0);
                         $("#bo").click(function () {
                             $("#enter").css("opacity", 1);
+                            
                         })
-                        $("#bo").click(function () {
-                            $("#enter").toggle();
-                        })
+                        
                         $(document).mouseup(function (e) {
                             let container = $("#enter");
                             if (container.has(e.target).length === 0) {
                                 container.hide();
                             }
+                            $("#bo").click(function () {
+                            $("#enter").toggle();
+                            
+                        })
                         });
                     </script>
                 </div>
